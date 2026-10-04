@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Assignment 4: Form Validation</title>
+
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+            }
+
+            form{
+                width: 800px;
+                border: 1px solid gray;
+                padding: 30px;
+            }
+
+            .row{
+                margin-bottom: 15px;
+            }
+
+            .field-label{
+                display: inline-block;
+                width: 180px;
+                text-align: right;
+                margin-right: 5px;
+            }
+
+            #messages{
+                margin-top: 20px;
+            }
+
+            #messages p{
+                margin: 10px 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Form Validation</h2>
+
+        <form id="myForm"> 
+            <!--this is the username portion-->
+            <div class="row">
+                <label class="field-label" for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <!--this is the email portion-->
+            <div class="row">
+                <label class="field-label" for="email">Email:</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <!--this is the phone number portion-->
+            <div class="row">
+                <label class="field-label" for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <!--this is the password portion-->
+            <div class="row">
+                <label class="field-label" for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <!--this is the confirmed password portion-->
+            <div class="row">
+                <label class="field-label" for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+            </div>
+            <!--gender portion-->
+            <div class="row">
+                <label class="field-label" for="password">Password:</label>
+                <input type="text" id="password" name="password">
+            </div>
+
+            <div class="row">
+                <span class="field-label">Gender:</span>
+
+                <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="Female"
+                >
+                <label for="female">Female</label>
+
+                <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="Male"
+                >
+                <label for="male">Male</label>
+
+                <input
+                    type="radio"
+                    id="other"
+                    name="gender"
+                    value="Other"
+                >
+                <label for="other">Other</label>
+            </div>
+
+            <div class="row">
+                <label class="field-label" for="ageGroup">Age Group:</label>
+                <select id="ageGroup" name="ageGroup">
+                    <option value=""></option>
+                    <option value="under21">&lt; 21 years old</option>
+                    <option value="21-25">21 - 25 years old</option>
+                    <option value="26-35">26 - 35 years old</option>
+                    <option value="36-50">36 - 50 years old</option>
+                    <option value="50">50 years old</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <span class="field-label">Music Genre:</span>
+
+                <input
+                    type="checkbox"
+                    id="pop"
+                    name="music"
+                    value="Pop"
+                >
+                <label for="pop">Pop</label>
+
+                <input
+                    type="checkbox"
+                    id="hiphop"
+                    name="music"
+                    value="Hip-hop"
+                >
+                <label for="hippop">Hip-pop</label>
+
+                <input
+                    type="checkbox"
+                    id="jazz"
+                    name="music"
+                    value="Jazz"
+                >
+                <label for="jazz">Jazz</label>
+
+                <input
+                    type="checkbox"
+                    id="rock"
+                    name="music"
+                    value="Rock"
+                >
+                <label for="rock">Rock</label>
+
+                <input
+                    type="checkbox"
+                    id="classical"
+                    name="music"
+                    value="Classical Music"
+                >
+                <label for="classical">Classical Music</label>
+
+                <input
+                    type="checkbox"
+                    id="country"
+                    name="music"
+                    value="Country"
+                >
+                <label for="country">Country</label>
+            </div>
+
+            <div class="row">
+                <span class="field-label"></span>
+                <button type="button" id="submitButton">
+                    submit
+                </button>
+            </div>
+        </form>
+    </body>
+
+
+</html>
